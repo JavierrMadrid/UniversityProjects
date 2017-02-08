@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_agregar_glucosa"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.javier.midiabetes.AgregarGlucosa"
+    android:focusableInTouchMode="true">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView2"
+        android:textAlignment="center"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:textColor="@android:color/background_light"
+        android:textStyle="normal|bold"
+        android:textSize="18sp"
+        android:background="@drawable/contornotxt"
+        android:text="FECHA Y HORA" />
+
+    <Button
+        android:text="GUARDAR"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnGuardar"
+        android:background="@drawable/btnguardaranimado"
+        android:padding="2dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:textColor="@color/ap_white" />
+
+    <NumberPicker
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/numberPicker3"
+        android:background="@drawable/ruleta"
+        android:padding="1dp"
+        android:layout_alignBottom="@+id/numberPicker2"
+        android:layout_toRightOf="@+id/numberPicker2"
+        android:layout_toEndOf="@+id/numberPicker2"
+        android:layout_below="@+id/textView3"
+        android:layout_marginTop="10dp" />
+
+    <NumberPicker
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/numberPicker2"
+        android:background="@drawable/ruleta"
+        android:padding="1dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/textView3"
+        android:layout_above="@+id/textView"
+        android:layout_marginBottom="12dp"
+        android:layout_marginTop="10dp" />
+
+    <NumberPicker
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/numberPicker1"
+        android:background="@drawable/ruleta"
+        android:padding="1dp"
+
+        android:nestedScrollingEnabled="false"
+        android:focusable="true"
+        android:layout_alignBottom="@+id/numberPicker2"
+        android:layout_toLeftOf="@+id/numberPicker2"
+        android:layout_toStartOf="@+id/numberPicker2"
+        android:layout_below="@+id/textView3"
+        android:layout_marginTop="10dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtHora"
+        android:width="160dp"
+        android:textSize="25sp"
+        android:background="@color/BlancoTransp"
+        android:textColorLink="?attr/actionMenuTextColor"
+        android:textColor="@color/colorPrimaryDark"
+        android:layout_marginTop="7dp"
+        android:textAlignment="center"
+        android:layout_below="@+id/textView2"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="10dp"
+        android:id="@+id/radioGroup"
+        android:layout_above="@+id/spinnerAñadir"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <RadioButton
+            android:text="Antes de"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/radioButtonAntes"
+            android:layout_weight="0.73"
+            android:layout_marginLeft="25dp"
+            tools:ignore="RtlHardcoded"
+            android:textSize="18sp" />
+
+        <RadioButton
+            android:text="Después de"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/radioButtonDespues"
+            android:layout_weight="1"
+            android:layout_marginLeft="35dp"
+            tools:ignore="RtlHardcoded"
+            android:textSize="18sp" />
+
+    </RadioGroup>
+
+    <TextView
+        android:text="GLUCOSA"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView3"
+        android:textAlignment="center"
+        android:textColor="@android:color/background_light"
+        android:textStyle="normal|bold"
+        android:textSize="18sp"
+        android:background="@drawable/contornotxt"
+        android:padding="1dp"
+        android:layout_marginTop="123dp"
+        android:layout_below="@+id/txtHora"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:id="@+id/edTxtComentarios"
+        android:background="@color/BlancoTransp"
+        android:gravity="top"
+        android:autoLink="all"
+        android:textSize="16sp"
+        android:minHeight="100dp"
+        android:layout_marginBottom="15dp"
+        android:layout_above="@+id/btnGuardar"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:text="COMENTARIOS"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView"
+        android:textAlignment="center"
+        android:textColor="@android:color/background_light"
+        android:textStyle="normal|bold"
+        android:textSize="18sp"
+        android:background="@drawable/contornotxt"
+        android:width="330dp"
+        android:layout_marginBottom="10dp"
+        android:layout_above="@+id/edTxtComentarios"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtFecha"
+        android:width="160dp"
+        android:textSize="25sp"
+        android:background="@color/BlancoTransp"
+        android:textColorLink="?attr/actionMenuTextColor"
+        android:textAlignment="center"
+        android:textColor="@color/colorPrimaryDark"
+        android:layout_alignBaseline="@+id/txtHora"
+        android:layout_alignBottom="@+id/txtHora"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <Spinner
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/spinnerAñadir"
+        android:layout_marginBottom="55dp"
+        android:textAlignment="center"
+        android:layout_alignBottom="@+id/textView3"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+</RelativeLayout>
