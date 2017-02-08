@@ -1,0 +1,33 @@
+<resources>
+    <string name="app_name">MiDiabetes</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string-array name="NumeroDeDias">
+        <item>Últimos 3 meses</item>
+        <item>Último mes</item>
+        <item>Últimos 14 días</item>
+        <item>Últimos 7 días</item>
+        <item>Hoy</item>
+    </string-array>
+
+    <string-array name="itemsLimites">
+        <item>Glucosa alta (En ayunas)</item>
+        <item>Glucosa alta (Después de comer)</item>
+        <item>Glucosa alta (Por la noche)</item>
+        <item>Glucosa baja (En ayunas)</item>
+        <item>Glucosa baja (Después de comer)</item>
+        <item>Glucosa baja (Por la noche)</item>
+    </string-array>
+
+    <string-array name="momentoDelDia">
+        <item>Desayuno</item>
+        <item>Almuerzo</item>
+        <item>Comida</item>
+        <item>Merienda</item>
+        <item>Cena</item>
+        <item>Ejercicio</item>
+        <item>Control nocturno</item>
+    </string-array>
+
+</resources>

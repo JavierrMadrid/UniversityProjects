@@ -1,0 +1,277 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_detalles_glucosa"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.javier.midiabetes.MenuDetallesGlucosa">
+
+    <TextView
+        android:text="FECHA Y HORA"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView6"
+        android:textAlignment="center"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:textColor="@android:color/background_light"
+        android:textStyle="normal|bold"
+        android:textSize="18sp"
+        android:background="@drawable/contornotxt"
+        android:layout_marginBottom="12dp"
+        tools:ignore="HardcodedText" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtViewFecha"
+        android:width="160dp"
+        android:textSize="28sp"
+        android:background="#a0ffffff"
+        android:textColorLink="?attr/actionMenuTextColor"
+        android:textAlignment="center"
+        android:textColor="@color/colorPrimaryDark"
+        android:layout_below="@+id/textView6"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtViewGlucosa"
+        android:background="@android:color/transparent"
+        android:textSize="72sp"
+        android:textAlignment="center"
+        android:gravity="center"
+        android:textColor="@color/colorPrimaryDark"
+        android:layout_below="@+id/textView9"
+        android:layout_marginTop="10dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:text="Eliminar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnEliminarToma"
+        android:background="@drawable/btnguardaranimado"
+        android:textColor="@color/ap_white"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginRight="13dp"
+        android:layout_marginEnd="13dp"
+        tools:ignore="HardcodedText" />
+
+    <Button
+        android:text="Confirmar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnConfirmar"
+        android:background="@drawable/btnguardaranimado"
+        android:textColor="@color/ap_white"
+        android:visibility="invisible"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        tools:ignore="HardcodedText" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtViewHora"
+        android:width="160dp"
+        android:textSize="28sp"
+        android:background="#a0ffffff"
+        android:textColorLink="?attr/actionMenuTextColor"
+        android:textAlignment="center"
+        android:textColor="@color/colorPrimaryDark"
+        android:layout_below="@+id/textView6"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="time"
+        android:ems="10"
+        android:id="@+id/editTextHora"
+        android:visibility="invisible"
+        android:textSize="28sp"
+        android:textAlignment="center"
+        android:layout_below="@+id/textView6"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignLeft="@+id/txtViewHora"
+        android:layout_alignStart="@+id/txtViewHora" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="date"
+        android:ems="10"
+        android:id="@+id/editTextFecha"
+        android:visibility="invisible"
+        android:textSize="28sp"
+        android:textAlignment="center"
+        android:layout_below="@+id/textView6"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignRight="@+id/txtViewFecha"
+        android:layout_alignEnd="@+id/txtViewFecha" />
+
+    <TextView
+        android:text="GLUCOSA"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView9"
+        android:textAlignment="center"
+        android:textColor="@android:color/background_light"
+        android:textStyle="normal|bold"
+        android:textSize="18sp"
+        android:background="@drawable/contornotxt"
+        android:layout_above="@+id/editTextGlucosa"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="5dp"
+        tools:ignore="HardcodedText" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:ems="10"
+        android:id="@+id/editTextGlucosa"
+        android:visibility="invisible"
+        android:textSize="72sp"
+        android:text="255"
+        android:textAlignment="center"
+        android:layout_above="@+id/textView10"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        tools:ignore="HardcodedText"
+        android:layout_marginBottom="10dp" />
+
+    <Button
+        android:text="Editar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnEditarToma"
+        android:background="@drawable/btnguardaranimado"
+        android:textColor="@color/ap_white"
+        android:layout_alignParentBottom="true"
+        android:layout_alignRight="@+id/editTextFecha"
+        android:layout_alignEnd="@+id/editTextFecha"
+        android:layout_marginRight="11dp"
+        android:layout_marginEnd="11dp"
+        tools:ignore="HardcodedText" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editTextHora"
+        android:id="@+id/txtViewMomento"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignLeft="@+id/editTextHora"
+        android:layout_alignStart="@+id/editTextHora"
+        android:layout_marginTop="20dp"
+        android:textSize="24sp"
+        android:textAlignment="center"
+        android:gravity="center"
+        android:textColor="@color/ap_black"
+        android:layout_above="@+id/textView9"
+        android:layout_marginBottom="20dp" />
+
+    <Spinner
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/spinnerEditar"
+        android:layout_alignBottom="@+id/txtViewMomento"
+        android:layout_toRightOf="@+id/editTextFecha"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginBottom="20dp"
+        android:visibility="invisible"
+        tools:ignore="RtlHardcoded"
+        android:textAlignment="viewEnd"
+        android:spinnerMode="dialog" />
+
+    <RadioGroup
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/txtViewMomento"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <RadioButton
+            android:text="Antes de:"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/radioButton"
+            android:layout_weight="1"
+            android:clickable="false"
+            android:textSize="20sp"
+            tools:ignore="HardcodedText" />
+
+        <RadioButton
+            android:text="Despues de:"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/radioButton2"
+            android:layout_weight="1"
+            android:clickable="false"
+            android:textSize="20sp"
+            tools:ignore="HardcodedText" />
+
+    </RadioGroup>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtViewComentarios"
+        android:background="@color/BlancoTransp"
+        android:height="100dp"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="18sp"
+        android:layout_below="@+id/editTextGlucosa"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="30dp" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:id="@+id/editTextComentario"
+        android:visibility="invisible"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignTop="@+id/txtViewComentarios"
+        android:layout_alignBottom="@+id/txtViewComentarios"
+        android:textSize="16sp" />
+
+    <TextView
+        android:text="COMENTARIOS"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView10"
+        android:textAlignment="center"
+        android:textColor="@android:color/background_light"
+        android:textStyle="normal|bold"
+        android:textSize="18sp"
+        android:background="@drawable/contornotxt"
+        android:width="330dp"
+        android:layout_marginBottom="130dp"
+        tools:ignore="HardcodedText"
+        android:layout_above="@+id/btnEliminarToma"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+</RelativeLayout>

@@ -1,0 +1,303 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.javier.midiabetes.EstadisticasFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="511dp">
+
+            <Spinner
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/spinnerEstadisticasGlucosa"
+                android:layout_below="@+id/textView7"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:popupBackground="@color/ap_white"
+                android:backgroundTint="@color/colorPrimaryDark"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="10dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/contornotxt"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_alignTop="@+id/textView8"
+                android:layout_above="@+id/textView19" />
+
+
+            <TextView
+                android:text="General"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView8"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="18sp"
+                android:layout_below="@+id/spinnerEstadisticasGlucosa"
+                android:layout_centerHorizontal="true" />
+
+            <TextView
+                android:text="Mínima:"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="21dp"
+                android:id="@+id/textView19"
+                android:textColor="@color/colorPrimaryDark"
+                android:layout_below="@+id/textView8"
+                android:layout_alignLeft="@+id/textView18"
+                android:layout_alignStart="@+id/textView18" />
+
+            <TextView
+                android:text="Máxima:"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView18"
+                android:textColor="@color/colorPrimaryDark"
+                android:layout_below="@+id/textView19"
+                android:layout_alignLeft="@+id/textView20"
+                android:layout_alignStart="@+id/textView20"
+                android:layout_marginTop="20dp" />
+
+            <TextView
+                android:text="Media:"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView20"
+                android:textColor="@color/colorPrimaryDark"
+                android:layout_marginLeft="31dp"
+                android:layout_marginStart="31dp"
+                android:layout_below="@+id/textView18"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_marginTop="20dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/txtMinima"
+                android:textSize="22sp"
+                android:textColor="@color/colorPrimaryDark"
+                android:layout_above="@+id/textView18"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginRight="21dp"
+                android:layout_marginEnd="21dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/txtMaxima"
+                android:textSize="22sp"
+                android:textColor="@color/colorPrimaryDark"
+                android:layout_alignRight="@+id/txtMinima"
+                android:layout_alignEnd="@+id/txtMinima"
+                android:layout_alignBottom="@+id/textView18" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/btnInformacion"
+                android:background="@drawable/interrogacion"
+                android:clickable="true"
+                android:layout_alignBottom="@+id/textView21"
+                android:layout_toLeftOf="@+id/textView21"
+                android:layout_toStartOf="@+id/textView21" />
+
+            <TextView
+                android:text="Estimación de HbA1C:"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView21"
+                android:textColor="@color/ap_black"
+                android:layout_marginLeft="7dp"
+                android:layout_marginStart="7dp"
+                android:layout_below="@+id/textView20"
+                android:layout_alignLeft="@+id/textView20"
+                android:layout_alignStart="@+id/textView20"
+                android:layout_marginTop="24dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/txtHbA1cEstimada"
+                android:textColor="@color/ap_black"
+                android:textSize="22sp"
+                android:layout_alignBottom="@+id/textView21"
+                android:layout_alignRight="@+id/txtMedia"
+                android:layout_alignEnd="@+id/txtMedia" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/contornotxt"
+                android:id="@+id/textView12"
+                android:layout_marginTop="42dp"
+                android:layout_below="@+id/btnInformacion"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true" />
+
+            <Spinner
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:id="@+id/spinnerEstadisticasGlucosa2"
+                android:layout_below="@+id/textView12"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:spinnerMode="dialog"
+                android:layout_marginBottom="10dp" />
+
+            <TextView
+                android:text="Máxima:"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView22"
+                android:layout_marginTop="21dp"
+                android:textColor="@color/ap_black"
+                android:layout_below="@+id/textView26"
+                android:layout_alignRight="@+id/textView19"
+                android:layout_alignEnd="@+id/textView19" />
+
+            <TextView
+                android:text="Media:"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView16"
+                android:layout_marginTop="21dp"
+                android:textColor="@color/ap_black"
+                android:layout_below="@+id/textView22"
+                android:layout_alignLeft="@+id/textView22"
+                android:layout_alignStart="@+id/textView22" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/txtMinimaDespues"
+                android:layout_above="@+id/textView22"
+                android:layout_alignRight="@+id/txtHbA1cEstimada"
+                android:layout_alignEnd="@+id/txtHbA1cEstimada"
+                android:textSize="22sp"
+                android:textColor="@color/ap_black" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/textView16"
+                android:layout_alignRight="@+id/txtMaximaDespues"
+                android:layout_alignEnd="@+id/txtMaximaDespues"
+                android:id="@+id/txtMediaDespues"
+                android:textSize="22sp"
+                android:textColor="@color/ap_black" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/txtMaximaDespues"
+                android:textSize="22sp"
+                android:textColor="@color/ap_black"
+                android:layout_alignBottom="@+id/textView22"
+                android:layout_alignRight="@+id/txtMinimaDespues"
+                android:layout_alignEnd="@+id/txtMinimaDespues" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/txtMedia"
+                android:textSize="22sp"
+                android:textColor="@color/colorPrimaryDark"
+                android:layout_alignBaseline="@+id/textView20"
+                android:layout_alignBottom="@+id/textView20"
+                android:layout_alignRight="@+id/txtMaxima"
+                android:layout_alignEnd="@+id/txtMaxima" />
+
+            <TextView
+                android:text="Despues"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView42"
+                android:layout_below="@+id/spinnerEstadisticasGlucosa2"
+                android:layout_alignRight="@+id/txtMinimaDespues"
+                android:layout_alignEnd="@+id/txtMinimaDespues"
+                android:textColor="@color/ap_black"
+                android:textSize="16sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/txtMinimaDespues"
+                android:layout_alignRight="@+id/textView41"
+                android:layout_alignEnd="@+id/textView41"
+                android:id="@+id/txtMinimaAntes"
+                android:textColor="@color/ap_black"
+                android:textSize="22sp" />
+
+            <TextView
+                android:text="Antes"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView41"
+                android:layout_alignBaseline="@+id/textView42"
+                android:layout_alignBottom="@+id/textView42"
+                android:layout_toRightOf="@+id/textView8"
+                android:layout_toEndOf="@+id/textView8"
+                android:textColor="@color/ap_black"
+                android:textSize="16sp" />
+
+            <TextView
+                android:text="Mínima:"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView26"
+                android:layout_marginTop="18dp"
+                android:textColor="@color/ap_black"
+                android:layout_below="@+id/textView41"
+                android:layout_alignLeft="@+id/textView22"
+                android:layout_alignStart="@+id/textView22" />
+
+            <TextView
+                android:text="Momento del día "
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView40"
+                android:textColor="@color/ap_black"
+                android:textSize="18sp"
+                android:layout_alignTop="@+id/textView12"
+                android:layout_centerHorizontal="true" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/txtMaximaAntes"
+                android:textSize="22sp"
+                android:layout_alignBaseline="@+id/textView22"
+                android:layout_alignBottom="@+id/textView22"
+                android:layout_alignRight="@+id/txtMinimaAntes"
+                android:layout_alignEnd="@+id/txtMinimaAntes"
+                android:textColor="@color/ap_black" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/txtMediaAntes"
+                android:textSize="22sp"
+                android:layout_alignBaseline="@+id/textView16"
+                android:layout_alignBottom="@+id/textView16"
+                android:layout_alignRight="@+id/txtMaximaAntes"
+                android:layout_alignEnd="@+id/txtMaximaAntes"
+                android:textColor="@color/ap_black" />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</ScrollView>
