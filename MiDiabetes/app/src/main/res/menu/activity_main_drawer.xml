@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="all">
+        <item
+            android:id="@+id/nav_inicio"
+            android:icon="@drawable/inicio"
+            android:title="Inicio"/>
+        <item
+            android:id="@+id/nav_glucosa"
+            android:icon="@drawable/gotagris"
+            android:title="Glucosa"
+           />
+        <item
+            android:id="@+id/nav_comidas"
+            android:icon="@drawable/alimento"
+            android:title="Comidas"
+           />
+        <item
+            android:id="@+id/nav_perfil"
+            android:icon="@drawable/usuarioicono"
+            android:title="Perfil"
+             />
+        <item
+            android:id="@+id/nav_hemoglobina"
+            android:icon="@drawable/graficagris"
+            android:title="HbA1c"/>
+
+        <item
+            android:id="@+id/nav_exportar"
+            android:icon="@drawable/exportar"
+            android:title="Exportar a PDF"/>
+
+    </group>
+
+
+
+</menu>

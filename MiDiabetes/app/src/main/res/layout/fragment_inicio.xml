@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.javier.midiabetes.InicioFragment">
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/btnAgregarInicio"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|right"
+        android:layout_marginBottom="16dp"
+        android:layout_marginRight="16dp"
+        android:clickable="true"
+        app:backgroundTint="@color/colorAccent"
+        app:fabSize="mini"
+        app:srcCompat="@drawable/anadir" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:ignore="UselessParent">
+
+        <LinearLayout
+            android:id="@+id/linearLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.83"
+            android:orientation="vertical"
+            android:weightSum="1">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="104dp"
+                android:background="@drawable/contornoperfil1"
+                android:orientation="vertical"
+                android:weightSum="1">
+
+                <TextView
+                    android:id="@+id/textView45"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="2dp"
+                    android:gravity="top"
+                    android:text="Actividad de los últimos 7 dias"
+                    android:textAlignment="center"
+                    android:textColor="@color/ap_charcoal"
+                    android:textSize="18sp" />
+
+                <RadioGroup
+                    android:id="@+id/radioGroup2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_below="@+id/textView45"
+                    android:layout_weight="0.63"
+                    android:checkedButton="@+id/radioButtonTodo"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:weightSum="1">
+
+                    <RadioButton
+                        android:id="@+id/radioButtonTodo"
+                        android:layout_width="84dp"
+                        android:layout_height="match_parent"
+                        android:buttonTint="@color/colorAccent"
+                        android:text="Todo"
+                        android:textStyle="bold" />
+
+                    <RadioButton
+                        android:id="@+id/radioButtonComida"
+                        android:layout_width="110dp"
+                        android:layout_height="match_parent"
+                        android:buttonTint="@color/colorAccent"
+                        android:text="Tomas de alimentos"
+                        android:textAlignment="textStart"
+                        android:textStyle="bold" />
+
+                    <RadioButton
+                        android:id="@+id/radioButtonGlucosa"
+                        android:layout_width="97dp"
+                        android:layout_height="match_parent"
+                        android:buttonTint="@color/colorAccent"
+                        android:text="Tomas de glucosa"
+                        android:textStyle="bold" />
+
+                </RadioGroup>
+
+            </LinearLayout>
+
+            <ListView
+                android:id="@+id/listaInicio"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/linearLayout"
+                android:layout_marginTop="-16dp"
+                android:paddingTop="10dp" />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</FrameLayout>

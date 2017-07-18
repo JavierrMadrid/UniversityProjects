@@ -8,20 +8,13 @@ import java.text.SimpleDateFormat;
 import java.util.Calendar;
 import java.util.List;
 
-/**
- * Created by Javier on 21/11/2016.
- */
-
 public class ListData{
-    private String fecha_publicacion;
-    private String hora;
-    private String antesodespues;
-    private String momento;
-    private String glucosa;
-    private String id;
-    private String comentario;
+    private String fecha_publicacion, hora, antesodespues, momento, glucosa, comentario, id;
+    private String fecha, comida, peso, raciones, hidratos, ingredientes;
+    private int tipo;
 
-    public ListData(String fecha, String hora, String antesodespues, String momento, String glucosa, String comentario, String id) {
+    public ListData(int tipo, String fecha, String hora, String antesodespues, String momento, String glucosa, String comentario, String id) {
+        this.tipo=tipo;
         this.fecha_publicacion = fecha;
         this.hora = hora;
         this.antesodespues= antesodespues;
@@ -29,6 +22,20 @@ public class ListData{
         this.glucosa = glucosa;
         this.comentario=comentario;
         this.id=id;
+    }
+
+    public int getTipo() {
+        return tipo;
+    }
+
+    public ListData(int tipo, String fecha, String comida, String peso, String raciones, String hidratos, String ingredientes){
+        this.tipo=tipo;
+        this.fecha=fecha;
+        this.comida=comida;
+        this.peso=peso;
+        this.raciones=raciones;
+        this.hidratos=hidratos;
+        this.ingredientes=ingredientes;
     }
 
     public String getComentario() {
@@ -85,5 +92,50 @@ public class ListData{
 
     public void setId(Cursor cursor) {
         this.id = id;
+    }
+
+    public String getComida() {
+        return comida;
+    }
+
+    public void setComida(String comida) {
+        this.comida = comida;
+    }
+
+    public String getRaciones() {
+        return raciones;
+    }
+
+    public void setRaciones(String raciones) {
+        this.raciones = raciones;
+    }
+
+    public String getHidratos() {
+        return hidratos;
+    }
+
+    public void setHidratos(String hidratos) {
+        this.hidratos = hidratos;
+    }
+
+    public String getFecha2() {
+        return fecha;
+    }
+
+
+    public String getIngredientes() {
+        return ingredientes;
+    }
+
+    public void setIngredientes(String ingredientes) {
+        this.ingredientes = ingredientes;
+    }
+
+    public String getPeso() {
+        return peso;
+    }
+
+    public void setPeso(String peso) {
+        this.peso = peso;
     }
 }

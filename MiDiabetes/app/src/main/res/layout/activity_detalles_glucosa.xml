@@ -8,7 +8,7 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context="com.example.javier.midiabetes.MenuDetallesGlucosa">
+    tools:context="com.example.javier.midiabetes.DetallesGlucosaActivity">
 
     <TextView
         android:text="FECHA Y HORA"
@@ -60,12 +60,10 @@
         android:id="@+id/btnEliminarToma"
         android:background="@drawable/btnguardaranimado"
         android:textColor="@color/ap_white"
+        tools:ignore="HardcodedText"
         android:layout_alignParentBottom="true"
         android:layout_alignParentRight="true"
-        android:layout_alignParentEnd="true"
-        android:layout_marginRight="13dp"
-        android:layout_marginEnd="13dp"
-        tools:ignore="HardcodedText" />
+        android:layout_alignParentEnd="true" />
 
     <Button
         android:text="Confirmar"
@@ -92,36 +90,6 @@
         android:layout_below="@+id/textView6"
         android:layout_alignParentRight="true"
         android:layout_alignParentEnd="true" />
-
-    <EditText
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:inputType="time"
-        android:ems="10"
-        android:id="@+id/editTextHora"
-        android:visibility="invisible"
-        android:textSize="28sp"
-        android:textAlignment="center"
-        android:layout_below="@+id/textView6"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentEnd="true"
-        android:layout_alignLeft="@+id/txtViewHora"
-        android:layout_alignStart="@+id/txtViewHora" />
-
-    <EditText
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:inputType="date"
-        android:ems="10"
-        android:id="@+id/editTextFecha"
-        android:visibility="invisible"
-        android:textSize="28sp"
-        android:textAlignment="center"
-        android:layout_below="@+id/textView6"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:layout_alignRight="@+id/txtViewFecha"
-        android:layout_alignEnd="@+id/txtViewFecha" />
 
     <TextView
         android:text="GLUCOSA"
@@ -170,35 +138,35 @@
         tools:ignore="HardcodedText" />
 
     <TextView
+        android:id="@+id/txtViewMomento"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/editTextHora"
-        android:id="@+id/txtViewMomento"
-        android:layout_alignParentRight="true"
+        android:layout_above="@+id/textView9"
+        android:layout_alignLeft="@+id/spinnerEditar"
         android:layout_alignParentEnd="true"
-        android:layout_alignLeft="@+id/editTextHora"
-        android:layout_alignStart="@+id/editTextHora"
+        android:layout_alignParentRight="true"
+        android:layout_alignStart="@+id/spinnerEditar"
+        android:layout_below="@+id/editTextHora"
+        android:layout_marginBottom="20dp"
         android:layout_marginTop="20dp"
-        android:textSize="24sp"
-        android:textAlignment="center"
         android:gravity="center"
         android:textColor="@color/ap_black"
-        android:layout_above="@+id/textView9"
-        android:layout_marginBottom="20dp" />
+        android:textSize="24sp" />
 
     <Spinner
+        android:id="@+id/spinnerEditar"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/spinnerEditar"
         android:layout_alignBottom="@+id/txtViewMomento"
-        android:layout_toRightOf="@+id/editTextFecha"
-        android:layout_alignParentRight="true"
+        android:layout_alignLeft="@+id/txtViewHora"
         android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignStart="@+id/txtViewHora"
         android:layout_marginBottom="20dp"
+        android:spinnerMode="dialog"
+        android:textAlignment="center"
         android:visibility="invisible"
-        tools:ignore="RtlHardcoded"
-        android:textAlignment="viewEnd"
-        android:spinnerMode="dialog" />
+        tools:ignore="RtlHardcoded" />
 
     <RadioGroup
         android:layout_width="wrap_content"

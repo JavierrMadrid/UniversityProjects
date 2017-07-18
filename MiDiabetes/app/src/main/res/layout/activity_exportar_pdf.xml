@@ -1,0 +1,312 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.example.javier.midiabetes.ExportarPDFActivity">
+
+    <com.github.mikephil.charting.charts.LineChart
+        android:id="@+id/pieChartPDF"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/btnFechaPDF"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/datePicker"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        tools:layout_editor_absoluteX="-7dp" />
+
+    <Button
+        android:id="@+id/btnExportarPDF"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/btnlimitesanimado"
+        android:text="Exportar"
+        android:textColor="@color/cardview_light_background"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginBottom="8dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" />
+
+    <CheckBox
+        android:id="@+id/checkBoxEstadisticas"
+        tools:layout_editor_absoluteY="292dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Estadísticas"
+        app:buttonTint="@color/colorAccent"
+        app:layout_constraintRight_toLeftOf="@+id/checkBox8"
+        android:layout_alignBottom="@+id/checkBoxTablas"
+        android:layout_alignRight="@+id/checkBoxComidas"
+        android:layout_alignEnd="@+id/checkBoxComidas"
+        tools:ignore="MissingPrefix,UnknownId" />
+
+    <CheckBox
+        android:id="@+id/checkBoxGraficas"
+        tools:layout_editor_absoluteX="248dp"
+        tools:layout_editor_absoluteY="292dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Gráficas"
+        app:buttonTint="@color/colorAccent"
+        android:layout_alignTop="@+id/checkBoxTablas"
+        android:layout_alignRight="@+id/textView59"
+        android:layout_alignEnd="@+id/textView59"
+        tools:ignore="MissingPrefix" />
+
+    <CheckBox
+        android:id="@+id/checkBoxTablas"
+        tools:layout_editor_absoluteY="292dp"
+        android:layout_width="93dp"
+        android:layout_height="31dp"
+        android:checked="false"
+        android:text="Tablas"
+        app:buttonTint="@color/colorAccent"
+        app:layout_constraintRight_toLeftOf="@+id/checkBox9"
+        android:layout_marginTop="8dp"
+        android:layout_below="@+id/textView59"
+        android:layout_alignLeft="@+id/textView59"
+        android:layout_alignStart="@+id/textView59"
+        tools:ignore="MissingPrefix,UnknownId" />
+
+    <TextView
+        android:id="@+id/textView54"
+        android:layout_width="64dp"
+        android:layout_height="58dp"
+        android:background="@drawable/graficaazul"
+        app:layout_constraintBottom_toTopOf="@+id/textView46"
+        app:layout_constraintLeft_toRightOf="@+id/txtRacionesDia"
+        app:layout_constraintTop_toBottomOf="@+id/checkBox8"
+        app:layout_constraintVertical_bias="0.071"
+        android:layout_alignBaseline="@+id/textView56"
+        android:layout_alignBottom="@+id/textView56"
+        android:layout_alignRight="@+id/textView69"
+        android:layout_alignEnd="@+id/textView69"
+        tools:ignore="UnknownId" />
+
+    <TextView
+        android:id="@+id/textView56"
+        android:layout_width="64dp"
+        android:layout_height="64dp"
+        android:background="@drawable/medias"
+        app:layout_constraintLeft_toRightOf="@+id/textView56"
+        app:layout_constraintTop_toBottomOf="@+id/checkBox9"
+        android:layout_marginTop="7dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginEnd="15dp"
+        android:layout_below="@+id/checkBoxGraficas"
+        android:layout_alignRight="@+id/checkBoxEstadisticas"
+        android:layout_alignEnd="@+id/checkBoxEstadisticas"
+        tools:ignore="NotSibling,UnknownId" />
+
+    <TextView
+        android:id="@+id/textView60"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/tabla"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/checkBoxEstadisticas"
+        android:layout_marginRight="12dp"
+        android:layout_marginEnd="12dp"
+        android:layout_alignBaseline="@+id/textView56"
+        android:layout_alignBottom="@+id/textView56"
+        android:layout_alignRight="@+id/checkBoxTablas"
+        android:layout_alignEnd="@+id/checkBoxTablas" />
+
+    <TextView
+        android:id="@+id/textView66"
+        tools:layout_editor_absoluteX="290dp"
+        android:layout_width="54dp"
+        android:layout_height="50dp"
+        android:background="@drawable/hba1c"
+        app:layout_constraintBottom_toTopOf="@+id/textView29"
+        android:layout_alignBottom="@+id/checkBoxHba1c"
+        android:layout_alignRight="@+id/textView63"
+        android:layout_alignEnd="@+id/textView63"
+        tools:ignore="UnknownId" />
+
+    <TextView
+        android:id="@+id/textView68"
+        tools:layout_editor_absoluteX="284dp"
+        android:layout_width="60dp"
+        android:layout_height="42dp"
+        android:background="@drawable/platocomida"
+        app:layout_constraintBottom_toTopOf="@+id/textView60"
+        android:layout_alignBottom="@+id/checkBoxComidas"
+        android:layout_alignRight="@+id/textView66"
+        android:layout_alignEnd="@+id/textView66" />
+
+    <TextView
+        android:id="@+id/textView69"
+        tools:layout_editor_absoluteX="297dp"
+        android:layout_width="34dp"
+        android:layout_height="46dp"
+        android:background="@drawable/glucosa"
+        app:layout_constraintBottom_toTopOf="@+id/textView59"
+        android:layout_marginLeft="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_alignBottom="@+id/checkBoxGlucosa"
+        android:layout_alignLeft="@+id/textView66"
+        android:layout_alignStart="@+id/textView66" />
+
+    <CheckBox
+        android:id="@+id/checkBoxGlucosa"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Tomas de glucosa"
+        app:buttonTint="@color/colorAccent"
+        app:layout_constraintBottom_toTopOf="@+id/checkBoxComidas"
+        app:layout_constraintHorizontal_bias="0.06"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@+id/txtRacionesTotal"
+        app:layout_constraintTop_toBottomOf="@+id/textView61"
+        app:layout_constraintVertical_bias="0.37"
+        android:layout_marginTop="21dp"
+        android:layout_below="@+id/textView63"
+        android:layout_alignLeft="@+id/textView63"
+        android:layout_alignStart="@+id/textView63"
+        tools:ignore="MissingPrefix,UnknownId" />
+
+    <TextView
+        android:id="@+id/textView59"
+        android:layout_width="323dp"
+        android:layout_height="39dp"
+        android:layout_alignLeft="@+id/checkBoxHba1c"
+        android:layout_alignStart="@+id/checkBoxHba1c"
+        android:layout_below="@+id/checkBoxHba1c"
+        android:layout_marginTop="22dp"
+        android:background="@drawable/contornotxt"
+        android:gravity="center"
+        android:text="¿De que forma quieres que aparezcan la información elegida anteriormente?"
+        android:textAlignment="center"
+        android:textColor="@color/ap_white"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/checkBox9"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        tools:ignore="UnknownId" />
+
+    <CheckBox
+        android:id="@+id/checkBoxComidas"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/checkBoxGlucosa"
+        android:layout_alignStart="@+id/checkBoxGlucosa"
+        android:layout_below="@+id/checkBoxGlucosa"
+        android:layout_marginTop="22dp"
+        android:buttonTint="@color/colorAccent"
+        android:text="Comidas e hidratos ingeridos"
+        app:layout_constraintBottom_toTopOf="@+id/checkBoxTablas"
+        app:layout_constraintHorizontal_bias="0.156"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@+id/textView59" />
+
+    <CheckBox
+        android:id="@+id/checkBoxHba1c"
+        android:layout_width="251dp"
+        android:layout_height="34dp"
+        android:layout_marginTop="28dp"
+        android:text="Valores de la hemoglobina glicosilada"
+        app:buttonTint="@color/colorAccent"
+        app:layout_constraintBottom_toTopOf="@+id/textView29"
+        app:layout_constraintHorizontal_bias="0.347"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@+id/textView60"
+        tools:ignore="MissingPrefix,UnknownId"
+        android:layout_below="@+id/textView68"
+        android:layout_alignLeft="@+id/checkBoxComidas"
+        android:layout_alignStart="@+id/checkBoxComidas" />
+
+    <TextView
+        android:id="@+id/textView63"
+        tools:layout_editor_absoluteX="18dp"
+        android:layout_width="325dp"
+        android:layout_height="24dp"
+        android:background="@drawable/contornotxt"
+        android:gravity="center"
+        android:text="¿Que infomación deseas exportar?"
+        android:textAlignment="center"
+        android:textColor="@color/ap_white"
+        android:textStyle="bold"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="10dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:id="@+id/textView72"
+        tools:layout_editor_absoluteX="158dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="hasta"
+        android:textColor="@color/ap_charcoal"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/btnExportarPDF"
+        tools:ignore="UnknownId"
+        android:layout_below="@+id/textView73"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp" />
+
+    <TextView
+        android:id="@+id/textView73"
+        android:layout_width="325dp"
+        android:layout_height="24dp"
+        android:layout_below="@+id/textView56"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="5dp"
+        android:layout_marginTop="18dp"
+        android:background="@drawable/contornotxt"
+        android:gravity="center"
+        android:text="¿Desde qué fecha quieres obtener  los datos?"
+        android:textAlignment="center"
+        android:textColor="@color/ap_white"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@+id/txtRacionesDia"
+        tools:ignore="UnknownId"
+        tools:layout_editor_absoluteX="18dp" />
+
+    <Button
+        android:id="@+id/btnFechaPDF"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/btnlimites"
+        android:text="Fecha inicio"
+        android:textColor="@color/ap_white"
+        android:layout_alignBaseline="@+id/textView72"
+        android:layout_alignBottom="@+id/textView72"
+        android:layout_toLeftOf="@+id/btnExportarPDF"
+        android:layout_alignLeft="@+id/textView73"
+        android:layout_alignStart="@+id/textView73" />
+
+    <Button
+        android:id="@+id/btnFecha2PDf"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/textView72"
+        android:layout_alignBottom="@+id/textView72"
+        android:layout_alignEnd="@+id/checkBoxGraficas"
+        android:layout_alignRight="@+id/checkBoxGraficas"
+        android:layout_toEndOf="@+id/btnExportarPDF"
+        android:layout_toRightOf="@+id/btnExportarPDF"
+        android:background="@drawable/btnlimites"
+        android:text="Fecha fin"
+        android:textColor="@color/ap_white" />
+
+    <DatePicker
+        android:id="@+id/datePicker"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:background="@color/ap_white"
+        android:headerBackground="@color/colorAccent"
+        android:visibility="gone" />
+
+</RelativeLayout>

@@ -5,10 +5,6 @@ import android.content.Context;
 import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 
-/**
- * Created by Javier on 21/11/2016.
- */
-
 public class DataBaseManagerGlucosa {
     public static final String TABLE_NAME = "tablaGlucosa";
     public static final String CN_ID = "_id";

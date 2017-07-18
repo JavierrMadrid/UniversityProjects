@@ -18,6 +18,8 @@
         <item>Glucosa baja (En ayunas)</item>
         <item>Glucosa baja (Después de comer)</item>
         <item>Glucosa baja (Por la noche)</item>
+        <item>Glucosa alta (Estándar)</item>
+        <item>Glucosa baja (Estándar)</item>
     </string-array>
 
     <string-array name="momentoDelDia">
@@ -28,6 +30,15 @@
         <item>Cena</item>
         <item>Ejercicio</item>
         <item>Control nocturno</item>
+        <item>Otro</item>
+
     </string-array>
+    <string name="title_activity_menu_detalles_comida">MenuDetallesComida</string>
+    <string name="title_activity_main">MainActivity</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
 
 </resources>

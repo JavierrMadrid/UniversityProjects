@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:focusableInTouchMode="true"
+    tools:context="com.example.javier.midiabetes.InsertarComidaActivity">
+
+    <ScrollView
+        android:id="@+id/scrollView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:ignore="UnknownIdInLayout"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="0dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:weightSum="1">
+
+            <TextView
+                android:id="@+id/mensajeNFC"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/contornotxt"
+                android:text="Comida"
+                android:textAlignment="center"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textColor="@color/ap_white"
+                android:textSize="25sp"
+                tools:ignore="HardcodedText" />
+
+            <Spinner
+                android:id="@+id/spinnerInsertar"
+                android:layout_width="331dp"
+                android:layout_height="match_parent" />
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/contornotxt"
+                android:text="Peso (g)"
+                android:textAlignment="center"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textColor="@color/ap_white"
+                android:textSize="25sp"
+                tools:ignore="HardcodedText" />
+
+            <EditText
+                android:id="@+id/txtAñadirPeso"
+                android:layout_width="169dp"
+                android:layout_height="wrap_content"
+                android:autoLink="none"
+                android:focusable="true"
+                android:inputType=""
+                android:textSize="20sp"
+                android:textStyle="italic" />
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/contornotxt"
+                android:text="Hidratos por racion (g)"
+                android:textAlignment="center"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textColor="@color/ap_white"
+                android:textSize="25sp"
+                tools:ignore="HardcodedText" />
+
+            <EditText
+                android:id="@+id/txtAñadirHidratosxRacion"
+                android:layout_width="147dp"
+                android:layout_height="wrap_content"
+                android:autoLink="none"
+                android:textSize="20sp"
+                android:textStyle="italic"
+                tools:ignore="TextFields" />
+
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/contornotxt"
+                android:text="Raciones"
+                android:textAlignment="center"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textColor="@color/ap_white"
+                android:textSize="25sp"
+                tools:ignore="HardcodedText" />
+
+            <EditText
+                android:id="@+id/txtAñadirRaciones"
+                android:layout_width="185dp"
+                android:layout_height="wrap_content"
+                android:autoLink="none"
+                android:inputType=""
+                android:textSize="20sp"
+                android:textStyle="italic" />
+
+            <TextView
+                android:id="@+id/textView5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/contornotxt"
+                android:text="Ingredientes"
+                android:textAlignment="center"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textColor="@color/ap_white"
+                android:textSize="25sp"
+                tools:ignore="HardcodedText" />
+
+            <EditText
+                android:id="@+id/txtAñadirIngredientes"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:autoLink="none"
+                android:textSize="20sp"
+                android:textStyle="italic"
+                tools:ignore="TextFields" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <Button
+        android:id="@+id/btnAgregarConsumido"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/scrollView2"
+        android:layout_alignLeft="@+id/scrollView2"
+        android:layout_alignRight="@+id/scrollView2"
+        android:layout_alignStart="@+id/scrollView2"
+        android:layout_below="@+id/scrollView2"
+        android:layout_gravity="center_horizontal"
+        android:background="@drawable/btnguardaranimado"
+        android:text="Añadir"
+        android:textColor="@color/ap_white"
+        tools:ignore="HardcodedText"
+        tools:layout_editor_absoluteX="8dp"
+        tools:layout_editor_absoluteY="0dp" />
+
+</RelativeLayout>

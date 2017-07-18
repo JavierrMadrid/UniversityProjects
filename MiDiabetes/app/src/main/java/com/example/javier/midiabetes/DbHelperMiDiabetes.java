@@ -2,11 +2,8 @@ package com.example.javier.midiabetes;
 
 import android.content.Context;
 import android.database.sqlite.SQLiteDatabase;
-import android.database.sqlite.SQLiteOpenHelper;import com.example.javier.midiabetes.DataBaseManagerAlimentos;
+import android.database.sqlite.SQLiteOpenHelper;
 
-/**
- * Created by Javier on 27/11/2015.
- */
 public class DbHelperMiDiabetes extends SQLiteOpenHelper{
 
     private static final String  DB_NAME = "MiDiabetesSQLite.sqlite";
@@ -18,10 +15,12 @@ public class DbHelperMiDiabetes extends SQLiteOpenHelper{
 
     @Override
     public void onCreate(SQLiteDatabase db) {
-        db.execSQL(DataBaseManagerAlimentos.CREATE_TABLE);
         db.execSQL(DataBaseManagerGlucosa.CREATE_TABLE);
         db.execSQL(DataBaseManagerDatosUsuario.CREATE_TABLE);
         db.execSQL(DataBaseManagerNutricion.CREATE_TABLE);
+        db.execSQL(DataBaseManagerHemoglobina.CREATE_TABLE);
+        db.execSQL(DataBaseManagerUsuarios.CREATE_TABLE);
+        db.execSQL(DataBaseManagerComidas.CREATE_TABLE);
     }
 
     @Override

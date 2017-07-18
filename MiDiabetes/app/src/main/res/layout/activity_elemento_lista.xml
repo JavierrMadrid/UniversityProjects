@@ -4,77 +4,289 @@
     android:id="@+id/activity_elemento_lista"
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
+    android:background="@drawable/elementolista"
     android:paddingBottom="@dimen/activity_vertical_margin"
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
-    android:paddingTop="@dimen/activity_vertical_margin"
-    android:background="@drawable/elementolista">
+    android:paddingTop="@dimen/activity_vertical_margin">
 
     <TextView
+        android:id="@+id/txtComidaLista"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/txtDate"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginStart="10dp"
+        android:textAlignment="textStart"
+        android:textColor="@color/ap_charcoal"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/txtDateComidas"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/textViewHidratos"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/txtComidaLista"
+        android:layout_marginTop="5dp"
         android:width="120dp"
         android:height="25dp"
-        android:textSize="20sp"
-        android:textStyle="normal|bold"
         android:textAlignment="center"
         android:textColor="@color/colorPrimaryDark"
-        android:layout_alignParentTop="true"
-        android:layout_alignRight="@+id/txtHour"
-        android:layout_alignEnd="@+id/txtHour" />
+        android:textSize="20sp"
+        android:visibility="gone" />
 
     <TextView
+        android:id="@+id/txtRacionesLista"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/txtHour"
-        android:width="100dp"
-        android:height="20dp"
-        android:textStyle="normal|bold"
-        android:textSize="18sp"
-        android:textAlignment="center"
-        android:textColor="?attr/textColorAlertDialogListItem"
-        android:layout_below="@+id/txtDate"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true" />
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/txtGlucosa"
+        android:layout_height="60dp"
+        android:layout_alignBottom="@+id/textViewRaciones"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/textViewRaciones"
         android:width="75dp"
         android:height="50dp"
+        android:gravity="center"
         android:textAlignment="center"
-        android:textSize="38sp"
         android:textColor="@color/colorPrimaryDark"
-        android:layout_alignBottom="@+id/txtHour"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentEnd="true" />
+        android:textSize="20sp"
+        android:visibility="gone" />
 
     <TextView
-        android:text="Glucosa:"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/txtGlu"
-        android:height="20dp"
+        android:id="@+id/textViewRaciones"
+        android:layout_width="80dp"
+        android:layout_height="25dp"
+        android:layout_below="@+id/txtComidaLista"
+        android:layout_toLeftOf="@+id/txtRacionesLista"
+        android:layout_toStartOf="@+id/txtRacionesLista"
         android:width="75dp"
-        android:textSize="18sp"
+        android:height="20dp"
+        android:gravity="bottom"
+        android:text="Raciones:"
         android:textColor="@color/colorPrimaryDark"
-        android:layout_alignParentTop="true"
-        android:layout_toLeftOf="@+id/txtGlucosa"
-        android:layout_toStartOf="@+id/txtGlucosa"
+        android:textSize="16sp"
+        android:visibility="gone"
         tools:ignore="HardcodedText" />
 
     <TextView
-        android:layout_width="match_parent"
+        android:id="@+id/textViewHidratos"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/txtmomento"
-        android:textSize="20sp"
-        android:textColor="@color/ap_charcoal"
+        android:layout_alignLeft="@+id/textViewRaciones"
+        android:layout_alignStart="@+id/textViewRaciones"
+        android:layout_below="@+id/textViewRaciones"
+        android:layout_marginTop="11dp"
+        android:layout_toLeftOf="@+id/txtRacionesLista"
+        android:layout_toStartOf="@+id/txtRacionesLista"
+        android:text="Hidratos:"
+        android:textColor="@color/ap_black"
+        android:textSize="16dp"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/txtHidratosLista"
+        android:layout_width="40dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/textViewHidratos"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_toEndOf="@+id/textViewRaciones"
+        android:layout_toRightOf="@+id/textViewRaciones"
+        android:gravity="center"
         android:textAlignment="center"
-        android:layout_below="@+id/txtHour"
+        android:textColor="@color/ap_black"
+        android:textSize="20sp"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/txtDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:width="120dp"
+        android:height="25dp"
+        android:textAlignment="center"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="20sp"
+        android:textStyle="normal|bold"
+        android:visibility="visible" />
+
+    <TextView
+        android:id="@+id/txtHour"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/txtDate"
+        android:layout_alignRight="@+id/txtDate"
+        android:layout_below="@+id/txtDate"
+        android:layout_marginBottom="10dp"
+        android:layout_marginRight="8dp"
+        android:width="100dp"
+        android:height="20dp"
+        android:textAlignment="center"
+        android:textColor="?attr/textColorAlertDialogListItem"
+        android:textSize="18sp"
+        android:textStyle="normal|bold"
+        android:visibility="visible" />
+
+    <TextView
+        android:id="@+id/txtGlucosa"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/txtHour"
+        android:layout_alignParentEnd="true"
         android:layout_alignParentRight="true"
-        android:layout_alignParentEnd="true" />
+        android:layout_alignParentTop="true"
+        android:layout_marginEnd="10dp"
+        android:layout_marginRight="10dp"
+        android:width="75dp"
+        android:height="50dp"
+        android:textAlignment="center"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="38sp"
+        android:visibility="visible" />
+
+    <TextView
+        android:id="@+id/txtGlu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/txtDate"
+        android:layout_toLeftOf="@+id/txtGlucosa"
+        android:layout_toStartOf="@+id/txtGlucosa"
+        android:width="75dp"
+        android:height="20dp"
+        android:text="Glucosa:"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="18sp"
+        android:visibility="visible"
+        tools:ignore="HardcodedText" />
+
+    <TextView
+        android:id="@+id/txtmomento"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/txtGlu"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignStart="@+id/txtGlu"
+        android:layout_below="@+id/txtHour"
+        android:textAlignment="center"
+        android:textColor="@color/ap_charcoal"
+        android:textSize="20sp"
+        android:visibility="visible" />
+
+    <TextView
+        android:id="@+id/txtAntesDespues"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/txtmomento"
+        android:layout_alignEnd="@+id/txtHour"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignRight="@+id/txtHour"
+        android:layout_below="@+id/txtHour"
+        android:textAlignment="center"
+        android:textColor="@color/md_grey_800"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/txtDe"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/txtAntesDespues"
+        android:layout_alignBottom="@+id/txtAntesDespues"
+        android:layout_toEndOf="@+id/txtAntesDespues"
+        android:layout_toRightOf="@+id/txtAntesDespues"
+        android:text=" de:"
+        android:textColor="@color/md_grey_800"
+        android:textSize="18sp" />
+
+    <RelativeLayout
+        android:id="@+id/layaoutlista2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/txtRaciones2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/textView74"
+            android:layout_alignBottom="@+id/textView74"
+            android:layout_marginLeft="2dp"
+            android:layout_toEndOf="@+id/textView74"
+            android:layout_toRightOf="@+id/textView74"
+            android:textSize="22sp" />
+
+        <TextView
+            android:id="@+id/txtHidratos2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/textView77"
+            android:layout_alignBottom="@+id/textView77"
+            android:layout_toEndOf="@+id/textView77"
+            android:layout_toRightOf="@+id/textView77"
+            android:textSize="22sp"
+            android:visibility="visible" />
+
+        <TextView
+            android:id="@+id/textView77"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/txtRaciones2"
+            android:layout_alignBottom="@+id/txtRaciones2"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="10dp"
+            android:layout_toEndOf="@+id/txtRaciones2"
+            android:layout_toRightOf="@+id/txtRaciones2"
+            android:text="Hidratos:"
+            android:textColor="@color/ap_black"
+            android:textSize="16dp"
+            android:visibility="visible" />
+
+        <TextView
+            android:id="@+id/textView74"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/txtComida2"
+            android:layout_alignStart="@+id/txtComida2"
+            android:layout_below="@+id/txtComida2"
+            android:layout_marginLeft="30dp"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="8dp"
+            android:width="75dp"
+            android:height="20dp"
+            android:gravity="bottom"
+            android:text="Raciones:"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="16sp"
+            android:visibility="visible"
+            tools:ignore="HardcodedText" />
+
+        <TextView
+            android:id="@+id/txtComida2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="7dp"
+            android:layout_marginStart="7dp"
+            android:text="Lentejas"
+            android:textAlignment="textStart"
+            android:textColor="@color/ap_charcoal"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:visibility="visible" />
+    </RelativeLayout>
+
 </RelativeLayout>

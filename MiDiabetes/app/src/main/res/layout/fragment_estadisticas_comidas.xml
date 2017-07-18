@@ -1,0 +1,311 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/scrollview1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:nestedScrollingEnabled="true"
+    tools:context="com.example.javier.midiabetes.EstadisticasComidasFragment">
+
+    <LinearLayout
+        android:id="@+id/layoutEstadisticasNutricion"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:focusableInTouchMode="true"
+        android:orientation="vertical"
+        android:weightSum="1">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="20.17">
+
+            <Spinner
+                android:id="@+id/spinnerEstadisticasGlucosa"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignEnd="@+id/txtTomas"
+                android:layout_alignLeft="@+id/textView46"
+                android:layout_alignParentTop="true"
+                android:layout_alignRight="@+id/txtTomas"
+                android:layout_alignStart="@+id/textView46"
+                android:layout_marginTop="10dp"
+                android:backgroundTint="@color/colorPrimaryDark"
+                android:popupBackground="@color/ap_white"
+                tools:layout_editor_absoluteX="8dp"
+                tools:layout_editor_absoluteY="25dp" />
+
+            <TextView
+                android:id="@+id/textView64"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_alignTop="@+id/textView8"
+                android:background="@drawable/contornotxt"
+                tools:layout_editor_absoluteX="8dp"
+                tools:layout_editor_absoluteY="25dp" />
+
+
+            <TextView
+                android:id="@+id/textView8"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textView7"
+                android:layout_marginTop="12dp"
+                android:layout_toEndOf="@+id/textView64"
+                android:layout_toRightOf="@+id/textView64"
+                android:background="@drawable/contornotxt"
+                android:text="Raciones"
+                android:textAlignment="center"
+                android:textColor="@color/ap_white"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                tools:layout_editor_absoluteX="295dp"
+                tools:layout_editor_absoluteY="25dp" />
+
+            <TextView
+                android:id="@+id/textView29"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/txtRacionesTotal"
+                android:layout_marginTop="9dp"
+                android:background="@drawable/contornotxt"
+                android:text="Hidratos"
+                android:textAlignment="center"
+                android:textColor="@color/ap_white"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                tools:layout_editor_absoluteX="295dp"
+                tools:layout_editor_absoluteY="25dp" />
+
+            <TextView
+                android:id="@+id/textView20"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txtHidratosTotal"
+                android:layout_marginTop="12dp"
+                android:layout_toEndOf="@+id/textView64"
+                android:layout_toRightOf="@+id/textView64"
+                android:background="@drawable/contornotxt"
+                android:text="Últimas comidas (hoy):"
+                android:textAlignment="center"
+                android:textColor="@color/ap_white"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                tools:layout_editor_absoluteX="16dp"
+                tools:layout_editor_absoluteY="170dp" />
+
+            <TextView
+                android:id="@+id/txtRaciones"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_below="@+id/textView8"
+                android:layout_marginEnd="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="10dp"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="22sp"
+                app:layout_constraintRight_toRightOf="@+id/textView8"
+                tools:layout_editor_absoluteY="69dp" />
+
+            <TextView
+                android:id="@+id/txtHidratos"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignEnd="@+id/txtRacionesTotal"
+                android:layout_alignRight="@+id/txtRacionesTotal"
+                android:layout_below="@+id/textView29"
+                android:layout_marginTop="10dp"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="22sp"
+                app:layout_constraintRight_toRightOf="@+id/textView8"
+                tools:layout_editor_absoluteY="115dp" />
+
+            <TextView
+                android:id="@+id/textView46"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/textView76"
+                android:layout_alignStart="@+id/textView76"
+                android:layout_below="@+id/spinnerEstadisticasGlucosa"
+                android:layout_marginTop="17dp"
+                android:text="Ingestas de alimentos realizadas:"
+                android:textColor="@color/ap_charcoal"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/textView55"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/txtRacionesDia"
+                android:layout_alignLeft="@+id/textView70"
+                android:layout_alignStart="@+id/textView70"
+                android:text="Media total:"
+                android:textColor="@color/ap_charcoal"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/textView7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/textView46"
+                android:layout_alignStart="@+id/textView46"
+                android:layout_below="@+id/textView46"
+                android:layout_marginTop="7dp"
+                android:text="Ingestas al día:"
+                android:textColor="@color/ap_charcoal"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/txtRacionesDia"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignEnd="@+id/txtRaciones"
+                android:layout_alignRight="@+id/txtRaciones"
+                android:layout_below="@+id/txtRaciones"
+                android:layout_marginTop="7dp"
+                android:textColor="@color/ap_charcoal"
+                android:textSize="22sp" />
+
+            <TextView
+                android:id="@+id/txtRacionesTotal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignEnd="@+id/txtRacionesDia"
+                android:layout_alignRight="@+id/txtRacionesDia"
+                android:layout_below="@+id/txtRacionesDia"
+                android:layout_marginTop="7dp"
+                android:textColor="@color/ap_charcoal"
+                android:textSize="22sp" />
+
+            <TextView
+                android:id="@+id/textView61"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/txtHidratos"
+                android:layout_alignBottom="@+id/txtHidratos"
+                android:layout_alignLeft="@+id/textView70"
+                android:layout_alignStart="@+id/textView70"
+                android:text="Media total:"
+                android:textColor="@color/ap_charcoal"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/textView62"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/txtHidratosDia"
+                android:layout_alignLeft="@+id/textView61"
+                android:layout_alignStart="@+id/textView61"
+                android:text="Hidratos al día:"
+                android:textColor="@color/ap_charcoal"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/textView76"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/txtRacionesTotal"
+                android:layout_alignLeft="@+id/textView70"
+                android:layout_alignStart="@+id/textView70"
+                android:text="Raciones al día:"
+                android:textColor="@color/ap_charcoal"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/textView75"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/txtHidratosTotal"
+                android:layout_alignLeft="@+id/textView62"
+                android:layout_alignStart="@+id/textView62"
+                android:text="Hidratos totales:"
+                android:textColor="@color/ap_charcoal"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/textView70"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/txtRacionesTotal"
+                android:layout_alignBottom="@+id/txtRacionesTotal"
+                android:layout_marginLeft="13dp"
+                android:layout_marginStart="13dp"
+                android:layout_toEndOf="@+id/textView64"
+                android:layout_toRightOf="@+id/textView64"
+                android:text="Raciones totales:"
+                android:textColor="@color/ap_charcoal"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/txtHidratosDia"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignEnd="@+id/txtRacionesTotal"
+                android:layout_alignRight="@+id/txtRacionesTotal"
+                android:layout_below="@+id/txtHidratos"
+                android:layout_marginTop="8dp"
+                android:textColor="@color/ap_charcoal"
+                android:textSize="22sp" />
+
+            <TextView
+                android:id="@+id/txtHidratosTotal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignEnd="@+id/txtHidratosDia"
+                android:layout_alignRight="@+id/txtHidratosDia"
+                android:layout_below="@+id/txtHidratosDia"
+                android:layout_marginTop="10dp"
+                android:textColor="@color/ap_charcoal"
+                android:textSize="22sp" />
+
+            <TextView
+                android:id="@+id/txtTomas"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/textView46"
+                android:layout_alignBottom="@+id/textView46"
+                android:layout_alignEnd="@+id/txtRaciones"
+                android:layout_alignRight="@+id/txtRaciones"
+                android:textAlignment="textEnd"
+                android:textColor="@color/ap_charcoal"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/txtTomasDia"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/textView7"
+                android:layout_alignEnd="@+id/txtTomas"
+                android:layout_alignLeft="@+id/txtTomas"
+                android:layout_alignRight="@+id/txtTomas"
+                android:layout_alignStart="@+id/txtTomas"
+                android:textAlignment="textEnd"
+                android:textColor="@color/ap_charcoal"
+                android:textSize="20sp" />
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="294dp"
+            android:orientation="vertical">
+
+            <ListView
+                android:id="@+id/listViewUltimasCom"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="7dp"
+                android:layout_marginTop="7dp"
+                android:nestedScrollingEnabled="true" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</ScrollView>

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:id="@+id/markerview2"
+        android:layout_width="78dp"
+        android:layout_height="80dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/ruleta"
+        android:orientation="vertical"
+        android:visibility="visible">
+
+        <TextView
+            android:id="@+id/textHidratosGrafica"
+            android:layout_width="match_parent"
+            android:layout_height="31dp"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@+id/textFechaGrafica"
+            android:layout_toStartOf="@+id/textFechaGrafica"
+            android:gravity="bottom|center"
+            android:textAlignment="center"
+            android:textColor="@color/ap_charcoal"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textFechaGrafica2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignBaseline="@+id/textGlucosaGrafica"
+            android:layout_alignBottom="@+id/textGlucosaGrafica"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:textAlignment="center"
+            android:textColor="@color/ap_charcoal"
+            android:textSize="14sp" />
+
+    </LinearLayout>
+</RelativeLayout>
